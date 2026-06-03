@@ -35,38 +35,20 @@ function Home() {
                     3 недели фокуса. Вот на что способны наши ученики:
                 </h2>
 
-                <div className="flex flex-col md:flex-row gap-6 w-full max-w-3xl px-4">
-                <div className="w-full md:w-1/2">
-                    <div className="bg-white rounded-lg shadow-lg overflow-hidden hover:scale-105 transition transform duration-300">
-                        <img src="/assets/ielts-result-7.png" alt="IELTS Result 7.0" className="w-full h-auto rounded"/>
+            <div className=" gap-6 w-full max-w-3xl px-4">
+                <div className="w-full  flex gap-5">
+                    <div className="">
+                        <img src="/assets/RasulIELTS.jpeg" alt="IELTS Result 7.0" className=" hover:scale-105 transition transform duration-300 mb-5 rounded-lg"/>
+                        <img src="/assets/IELTS-Score-7-0.png" alt="Student" className="hover:scale-105 transition transform duration-300 rounded-lg"/>
+                        
                     </div>
-                    <div className="flex items-center gap-4 mt-3 bg-white rounded-lg p-3 shadow-lg">
-                        <div>
-                            <p className="font-bold text-black text-sm">Overall</p>
-                            <p className="font-bold text-black text-sm">Band</p>
-                            <p className="font-bold text-black text-sm">Score</p>
-                        </div>
-                        <div className="border-2 border-gray-400 px-4 py-2">
-                            <p className="text-3xl font-bold text-black">7.0</p>
-                        </div>
+                    <div className="">
+                        <img src="/assets/ToreIELTS.jpg" alt="IELTS Result 6.5" className="hover:scale-105 transition transform duration-300 mb-3 rounded-lg"/>
+                        <img src="/assets/IELTS-Score-6-5.png" alt="Student" className=" hover:scale-105 transition transform duration-300 rounded-lg"/>
+                        
                     </div>
                 </div>
 
-                <div className="w-full md:w-1/2">
-                    <div className="bg-white rounded-lg shadow-lg overflow-hidden hover:scale-105 transition transform duration-300">
-                        <img src="/assets/ielts-result-6.5.png" alt="IELTS Result 6.5" className="w-full h-auto rounded"/>
-                    </div>
-                    <div className="flex items-center gap-4 mt-3 bg-white rounded-lg p-3 shadow-lg">
-                        <div>
-                            <p className="font-bold text-black text-sm">Overall</p>
-                            <p className="font-bold text-black text-sm">Band</p>
-                            <p className="font-bold text-black text-sm">Score</p>
-                        </div>
-                        <div className="border-2 border-gray-400 px-4 py-2">
-                            <p className="text-3xl font-bold text-black">6.5</p>
-                        </div>
-                    </div>
-                </div>
             </div>
 
             </section>
