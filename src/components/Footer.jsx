@@ -48,7 +48,7 @@ function Footer(){
             <div className="text-left">
                 <h1 className="text-3xl font-montserrat mb-10">Связаться с нами</h1>
                 <p className="text-gray-600 text-xl">Электронная почта:</p>
-                <p className="text-xl mb-5">example@gmail.com</p>
+                <p className="text-xl mb-5">marlenulydaut@gmail.com</p>
                 <p className="text-gray-600 text-xl">Телефон:</p>
                 <p className="text-xl mb-5">+7 707 111 35 41</p>
                 <div className="flex gap-6 mt-4">

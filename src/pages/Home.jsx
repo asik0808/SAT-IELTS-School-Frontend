@@ -22,7 +22,7 @@ function Home() {
             </div>
 
             <section className="bg-[#1F203B] py-16 px-4 flex flex-col items-center justify-center relative overflow-hidden">
-                
+    
                 <div className="absolute left-4 bottom-20 hidden lg:block opacity-100 z-10"> 
                     <img src="/assets/left-confeti.svg" alt="Vector1" className="w-60"/>
                 </div>
@@ -31,31 +31,44 @@ function Home() {
                     <img src="/assets/right-confeti.svg" alt="Vector2" className="w-60"/>
                 </div>
 
-                <h2 className="text-4xl md:text-5xl text-white font-montserrat font-bold text-center mb-10 tracking-wide max-w-3xl">
+                <h2 className="text-2xl md:text-5xl text-white font-montserrat font-bold text-center mb-10 tracking-wide max-w-3xl">
                     3 недели фокуса. Вот на что способны наши ученики:
                 </h2>
 
-                <div className="relative w-full max-w-5xl flex justify-center items-center px-4 z-1"> 
-                    <img src="/assets/Phone.png" alt="Phone" className="w-full h-auto"/>
-                    
-                    <div className="absolute inset-0 flex flex-row items-center justify-center gap-4 md:gap-10 px-10 py-6 z-20">
-                        <div className="max-w-[340px] bg-white rounded-lg shadow-lg mb-10 md:mb-35 hover:scale-105 transition transform duration-300">
-                            <img 
-                                src="/assets/ielts-result-7.png" 
-                                alt="IELTS Result 7.0" 
-                                className="w-full h-auto rounded"
-                            />
+                <div className="flex flex-col md:flex-row gap-6 w-full max-w-3xl px-4">
+                <div className="w-full md:w-1/2">
+                    <div className="bg-white rounded-lg shadow-lg overflow-hidden hover:scale-105 transition transform duration-300">
+                        <img src="/assets/ielts-result-7.png" alt="IELTS Result 7.0" className="w-full h-auto rounded"/>
+                    </div>
+                    <div className="flex items-center gap-4 mt-3 bg-white rounded-lg p-3 shadow-lg">
+                        <div>
+                            <p className="font-bold text-black text-sm">Overall</p>
+                            <p className="font-bold text-black text-sm">Band</p>
+                            <p className="font-bold text-black text-sm">Score</p>
                         </div>
-
-                        <div className="max-w-[340px] bg-white rounded-lg shadow-lg mb-10 md:mb-35 hover:scale-105 transition transform duration-300">
-                            <img 
-                                src="/assets/ielts-result-6.5.png" 
-                                alt="IELTS Result 6.5" 
-                                className="w-full h-auto rounded"
-                            />
+                        <div className="border-2 border-gray-400 px-4 py-2">
+                            <p className="text-3xl font-bold text-black">7.0</p>
                         </div>
                     </div>
                 </div>
+
+                <div className="w-full md:w-1/2">
+                    <div className="bg-white rounded-lg shadow-lg overflow-hidden hover:scale-105 transition transform duration-300">
+                        <img src="/assets/ielts-result-6.5.png" alt="IELTS Result 6.5" className="w-full h-auto rounded"/>
+                    </div>
+                    <div className="flex items-center gap-4 mt-3 bg-white rounded-lg p-3 shadow-lg">
+                        <div>
+                            <p className="font-bold text-black text-sm">Overall</p>
+                            <p className="font-bold text-black text-sm">Band</p>
+                            <p className="font-bold text-black text-sm">Score</p>
+                        </div>
+                        <div className="border-2 border-gray-400 px-4 py-2">
+                            <p className="text-3xl font-bold text-black">6.5</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
             </section>
 
 
