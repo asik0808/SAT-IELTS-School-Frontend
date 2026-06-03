@@ -1,52 +1,132 @@
-import {useState} from 'react'
+import OverlappingCard from '../components/Card'
+import Footer from '../components/Footer.jsx'
 
 function Home() {
-    const [form, setForm] = useState({name: '', phone:'', email:'', course:''})
-    const [status, setStatus] = useState('')
-
-    const handleChange = (e) => {
-        setForm({...form, [e.target.name]: e.target.value})
-    }
-
-    const handleSubmit = async () => {
-        if(!form.name || !form.phone || !form.email || !form.course) {
-            setStatus('Please fill in all fields')
-            return
-        }
-
-        try {
-            const response = await fetch('http://127.0.0.1:8000/register' , {
-                method: 'POST',
-                headers: {
-                    'Content-Type': 'application/json'
-                },
-                body: JSON.stringify(form)
-            })
-            const data = await response.json()
-            setStatus("Enrollment successful! We will contact you soon.")
-            setForm({name: '', phone:'', email:'', course:''})
-        } catch (error) {
-            setStatus('Enrollment failed. Please try again later.')
-        }
-    }
-
-
-
-
+    
     return (
-        <div className="p-10">
-            <h1 className="text-3xl font-bold text-blue-600"> Welcome</h1>
+        <>
+            <div 
+                className="w-full min-h-screen bg-cover bg-center bg-no-repeat flex items-center relative"
+                style={{ backgroundImage: "linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('/src/assets/bg-Image.png')" }}
+            >
+                <div className="pl-6 md:pl-20 max-w-2xl lg:max-w-3xl z-10">
+                    <h1 className="text-5xl text-white font-merriweather font-bold">
+                        Edutication
+                    </h1>
+                    <p className="text-3xl tracking-wide leading-relaxed text-white mt-6 font-montserrat font-thin">
+                        Пока одни откладывают подготовку - другие уже строят свое будущее.
+                    </p>
+                    <p className="text-xl text-purple-400 mt-4 font-montserrat font-light">
+                        Мы помогаем амбициозным студентам поступать в топовые вузы, закрывая вопросы по SAT и IELTS без зубрежки и стресса
+                    </p>
+                </div>
+            </div>
+
+            <section className="bg-[#1F203B] py-16 px-4 flex flex-col items-center justify-center relative overflow-hidden">
+                
+                <div className="absolute left-4 bottom-20 hidden lg:block opacity-100 z-10"> 
+                    <img src="/src/assets/left-confeti.svg" alt="Vector1" className="w-60"/>
+                </div>
+
+                <div className="absolute right-4 bottom-20 hidden lg:block opacity-100 z-10"> 
+                    <img src="/src/assets/right-confeti.svg" alt="Vector2" className="w-60"/>
+                </div>
+
+                <h2 className="text-4xl md:text-5xl text-white font-montserrat font-bold text-center mb-10 tracking-wide max-w-3xl">
+                    3 недели фокуса. Вот на что способны наши ученики:
+                </h2>
+
+                <div className="relative w-full max-w-5xl flex justify-center items-center px-4 z-1"> 
+                    <img src="/src/assets/Phone.png" alt="Phone" className="w-full h-auto"/>
+                    
+                    <div className="absolute inset-0 flex flex-row items-center justify-center gap-4 md:gap-10 px-10 py-6 z-20">
+                        <div className="max-w-[340px] bg-white rounded-lg shadow-lg mb-10 md:mb-35 hover:scale-105 transition transform duration-300">
+                            <img 
+                                src="/src/assets/ielts-result-7.png" 
+                                alt="IELTS Result 7.0" 
+                                className="w-full h-auto rounded"
+                            />
+                        </div>
+
+                        <div className="max-w-[340px] bg-white rounded-lg shadow-lg mb-10 md:mb-35 hover:scale-105 transition transform duration-300">
+                            <img 
+                                src="/src/assets/ielts-result-6.5.png" 
+                                alt="IELTS Result 6.5" 
+                                className="w-full h-auto rounded"
+                            />
+                        </div>
+                    </div>
+                </div>
+            </section>
 
 
-            <input name ='name' value={form.name} onChange={handleChange} placeholder='your name' className="w-full border p-3 rounded mb-3"/>
-            <input name ='phone' value={form.phone} onChange={handleChange} placeholder='your phone' className="w-full border p-3 rounded mb-3"/>
-            <input name ='email' value={form.email} onChange={handleChange} placeholder='your email' className="w-full border p-3 rounded mb-3"/>
-            <input name ='course' value={form.course} onChange={handleChange} placeholder='your course' className="w-full border p-3 rounded mb-3"/>
-            <button onClick={handleSubmit} className="bg-blue-500 text-white p-3 rounded hover:bg-blue-600">
-                Enroll
-            </button>
-            {status && <p className="text-green-500">{status}</p>}
-        </div>
+            <section className="bg-[#120E2E] py-16">
+                <h2 className="text-center text-4xl md:text-5xl font-bold text-white pb-20 pt-10 leading-tight">
+                    За счет чего мы делаем такие <br className="hidden md:block"/> результаты? Все просто:
+                </h2>
+                <div className="max-w-7xl mx-auto px-6 grid grid-cols-1 md:grid-cols-3 gap-16 pb-20">
+                    <OverlappingCard
+                        title="ИНДИВИДУАЛЬНЫЙ ТРЕК."
+                        bulletText={[
+                            "Личный наставник",
+                            "Разбор твоих слабых мест",
+                            "Подбор программы под твой уровень"
+                        ]}
+                        icon="/src/assets/book-apple.png"
+                    />
+
+                    <OverlappingCard
+                        title="МАКСИМУМ ПРАКТИКИ"
+                        bulletText={[
+                            "Справочники и чек-листы",
+                            "Разбор заданий из свежих экзаменов",
+                            'Никакой лишней "воды"'
+                        ]}
+                        icon="/src/assets/letter.png"
+                    />
+
+                    <OverlappingCard
+                        title="ПОДДЕРЖКА 24/7"
+                        bulletText={[
+                            "Моральная поддержка до экзамена",
+                            "Разбор Эссе и задач (SAT,IELTS)",
+                            "Быстрый ответ в рабочем чате"
+                        ]}
+                        icon="/src/assets/hat.png"
+                    />
+                </div>
+            </section>
+
+            <section className="min-h-[70vh] bg-[#1F203B] w-full flex flex-col items-center justify-center px-6 pt-20 pb-0 relative overflow-hidden">
+    
+                <img 
+                    src="/src/assets/left-book.png" 
+                    alt="left books" 
+                    className="absolute left-0 bottom-0 hidden lg:block w-72 xl:w-96 object-contain z-10"
+                />
+
+                <div className="max-w-xl flex flex-col items-center text-center z-20 mb-24">
+                    <div className="inline-block border-b-2 border-green-800 pb-3 font-merriweather mb-8">
+                        <h2 className="text-4xl md:text-5xl font-bold text-white tracking-wide">
+                            1450 + 7.0 <span className="text-green-800">= ГРАНТ</span>
+                        </h2>
+                    </div>
+
+                    <p className="text-lg md:text-3xl text-gray-300 font-montserrat font-light leading-relaxed max-w-md">
+                        Высокие баллы на экзаменах - это не просто красивые цифры в сертификате. 
+                        Это твои открытые двери в топовые университеты мира.
+                    </p>
+                </div>
+
+                <img 
+                    src="/src/assets/left-book.png" 
+                    alt="right books" 
+                    className="absolute right-0 bottom-0 hidden lg:block w-72 xl:w-96 object-contain -scale-x-100 z-10"
+                />
+
+            </section>
+
+        </>
     )
 }
 
