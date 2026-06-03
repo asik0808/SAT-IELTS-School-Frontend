@@ -21,7 +21,7 @@ function Footer(){
         }
 
         try {
-            const response = await fetch('http://127.0.0.1:8000/register', {
+            const response = await fetch('https://sat-ielts-school-backend-production.up.railway.app/register', {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json'
@@ -50,11 +50,19 @@ function Footer(){
                 <p className="text-gray-600 text-xl">Электронная почта:</p>
                 <p className="text-xl mb-5">example@gmail.com</p>
                 <p className="text-gray-600 text-xl">Телефон:</p>
-                <p className="text-xl mb-5">+7 777 777 77 77</p>
+                <p className="text-xl mb-5">+7 707 111 35 41</p>
                 <div className="flex gap-6 mt-4">
-                <img src="/src/assets/insta-button.png" alt="instagram" />
-                <img src="/src/assets/whats-button.png" alt="whatsapp" />
-                <img src="/src/assets/tg-button.png" alt="telegram" />
+                <a href="https://www.instagram.com/edutication/" target="_blank" rel="noopener noreferrer">
+                    <img src="/src/assets/insta-button.png" alt="instagram" />
+                </a>
+                
+                <a href="https://wa.me/77071113541" target="_blank" rel="noopener noreferrer">
+                    <img src="/src/assets/whats-button.png" alt="whatsapp" />
+                </a>
+                
+                <a href="https://web.telegram.org/k/#@edutication" target="_blank" rel="noopener noreferrer">
+                    <img src="/src/assets/tg-button.png" alt="telegram" />
+                </a>
                 </div>
             </div>
 
@@ -116,7 +124,7 @@ function Footer(){
             </div>
 
             </div>
-            <p className="text-gray-500 mt-6">© 2023 Edutication. Все права защищены.</p>
+            <p className="text-gray-500 mt-6">© 2026 Edutication. Все права защищены.</p>
         </footer>
         )
 }

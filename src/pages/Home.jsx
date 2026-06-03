@@ -1,5 +1,4 @@
 import OverlappingCard from '../components/Card'
-import Footer from '../components/Footer.jsx'
 
 function Home() {
     
