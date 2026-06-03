@@ -25,7 +25,7 @@ function Team() {
       <div className="text-left mb-10 md:mb-0">
         <p className="text-gray-400 text-lg mb-2">- Твой путь к топ-баллам -</p>
         <p className="text-white text-4xl font-bold mb-6">Наша команда</p>
-        <img src="/src/assets/arrows.png" alt="arrows" className="h-12 w-12"/>
+        <img src="/assets/arrows.png" alt="arrows" className="h-12 w-12"/>
       </div>
 
       {/* Карточки */}

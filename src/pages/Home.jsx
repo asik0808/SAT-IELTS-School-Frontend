@@ -6,7 +6,7 @@ function Home() {
         <>
             <div 
                 className="w-full min-h-screen bg-cover bg-center bg-no-repeat flex items-center relative"
-                style={{ backgroundImage: "linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('/src/assets/bg-Image.png')" }}
+                style={{ backgroundImage: "linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('/assets/bg-Image.png')" }}
             >
                 <div className="pl-6 md:pl-20 max-w-2xl lg:max-w-3xl z-10">
                     <h1 className="text-5xl text-white font-merriweather font-bold">
@@ -24,11 +24,11 @@ function Home() {
             <section className="bg-[#1F203B] py-16 px-4 flex flex-col items-center justify-center relative overflow-hidden">
                 
                 <div className="absolute left-4 bottom-20 hidden lg:block opacity-100 z-10"> 
-                    <img src="/src/assets/left-confeti.svg" alt="Vector1" className="w-60"/>
+                    <img src="/assets/left-confeti.svg" alt="Vector1" className="w-60"/>
                 </div>
 
                 <div className="absolute right-4 bottom-20 hidden lg:block opacity-100 z-10"> 
-                    <img src="/src/assets/right-confeti.svg" alt="Vector2" className="w-60"/>
+                    <img src="/assets/right-confeti.svg" alt="Vector2" className="w-60"/>
                 </div>
 
                 <h2 className="text-4xl md:text-5xl text-white font-montserrat font-bold text-center mb-10 tracking-wide max-w-3xl">
@@ -36,12 +36,12 @@ function Home() {
                 </h2>
 
                 <div className="relative w-full max-w-5xl flex justify-center items-center px-4 z-1"> 
-                    <img src="/src/assets/Phone.png" alt="Phone" className="w-full h-auto"/>
+                    <img src="/assets/Phone.png" alt="Phone" className="w-full h-auto"/>
                     
                     <div className="absolute inset-0 flex flex-row items-center justify-center gap-4 md:gap-10 px-10 py-6 z-20">
                         <div className="max-w-[340px] bg-white rounded-lg shadow-lg mb-10 md:mb-35 hover:scale-105 transition transform duration-300">
                             <img 
-                                src="/src/assets/ielts-result-7.png" 
+                                src="/assets/ielts-result-7.png" 
                                 alt="IELTS Result 7.0" 
                                 className="w-full h-auto rounded"
                             />
@@ -49,7 +49,7 @@ function Home() {
 
                         <div className="max-w-[340px] bg-white rounded-lg shadow-lg mb-10 md:mb-35 hover:scale-105 transition transform duration-300">
                             <img 
-                                src="/src/assets/ielts-result-6.5.png" 
+                                src="/assets/ielts-result-6.5.png" 
                                 alt="IELTS Result 6.5" 
                                 className="w-full h-auto rounded"
                             />
@@ -71,7 +71,7 @@ function Home() {
                             "Разбор твоих слабых мест",
                             "Подбор программы под твой уровень"
                         ]}
-                        icon="/src/assets/book-apple.png"
+                        icon="/assets/book-apple.png"
                     />
 
                     <OverlappingCard
@@ -81,7 +81,7 @@ function Home() {
                             "Разбор заданий из свежих экзаменов",
                             'Никакой лишней "воды"'
                         ]}
-                        icon="/src/assets/letter.png"
+                        icon="/assets/letter.png"
                     />
 
                     <OverlappingCard
@@ -91,7 +91,7 @@ function Home() {
                             "Разбор Эссе и задач (SAT,IELTS)",
                             "Быстрый ответ в рабочем чате"
                         ]}
-                        icon="/src/assets/hat.png"
+                        icon="/assets/hat.png"
                     />
                 </div>
             </section>
@@ -99,7 +99,7 @@ function Home() {
             <section className="min-h-[70vh] bg-[#1F203B] w-full flex flex-col items-center justify-center px-6 pt-20 pb-0 relative overflow-hidden">
     
                 <img 
-                    src="/src/assets/left-book.png" 
+                    src="/assets/left-book.png" 
                     alt="left books" 
                     className="absolute left-0 bottom-0 hidden lg:block w-72 xl:w-96 object-contain z-10"
                 />
@@ -118,7 +118,7 @@ function Home() {
                 </div>
 
                 <img 
-                    src="/src/assets/left-book.png" 
+                    src="/assets/left-book.png" 
                     alt="right books" 
                     className="absolute right-0 bottom-0 hidden lg:block w-72 xl:w-96 object-contain -scale-x-100 z-10"
                 />

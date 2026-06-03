@@ -53,15 +53,15 @@ function Footer(){
                 <p className="text-xl mb-5">+7 707 111 35 41</p>
                 <div className="flex gap-6 mt-4">
                 <a href="https://www.instagram.com/edutication/" target="_blank" rel="noopener noreferrer">
-                    <img src="/src/assets/insta-button.png" alt="instagram" />
+                    <img src="/assets/insta-button.png" alt="instagram" />
                 </a>
                 
                 <a href="https://wa.me/77071113541" target="_blank" rel="noopener noreferrer">
-                    <img src="/src/assets/whats-button.png" alt="whatsapp" />
+                    <img src="/assets/whats-button.png" alt="whatsapp" />
                 </a>
                 
                 <a href="https://web.telegram.org/k/#@edutication" target="_blank" rel="noopener noreferrer">
-                    <img src="/src/assets/tg-button.png" alt="telegram" />
+                    <img src="/assets/tg-button.png" alt="telegram" />
                 </a>
                 </div>
             </div>
