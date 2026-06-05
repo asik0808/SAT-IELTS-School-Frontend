@@ -2,17 +2,17 @@ const members = [
   {
     name: "Смантай Даут",
     role: "CEO",
-    image: "public/assets/Daut.JPG",
+    image: "/assets/Daut.JPG",
   },
   {
     name: "Семен",
     role: "IELTS Tutor",
-    image: "public/assets/Semyon.jpeg",
+    image: "/assets/Semyon.jpeg",
   },
   {
     name: "Assylali",
     role: "SAT Tutor & Web Developer",
-    image: "public/assets/Asylali.JPG",
+    image: "/assets/Asylali.jpg",
   },
 ]
 
