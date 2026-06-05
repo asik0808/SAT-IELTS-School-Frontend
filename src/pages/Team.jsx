@@ -12,7 +12,7 @@ const members = [
   {
     name: "Assylali",
     role: "SAT Tutor & Web Developer",
-    image: "/assets/Asylali.jpg",
+    image: "/assets/Asylali.JPG",
   },
 ]
 
