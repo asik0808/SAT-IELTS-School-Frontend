@@ -2,17 +2,17 @@ const members = [
   {
     name: "Смантай Даут",
     role: "CEO",
-    image: null,
+    image: "public/assets/Daut.JPG",
   },
   {
     name: "Семен",
     role: "IELTS Tutor",
-    image: null,
+    image: "public/assets/Semyon.jpeg",
   },
   {
     name: "Assylali",
     role: "SAT Tutor & Web Developer",
-    image: null,
+    image: "public/assets/Asylali.JPG",
   },
 ]
 
@@ -31,10 +31,10 @@ function Team() {
       {/* Карточки */}
       <div className="flex flex-col md:flex-row gap-6">
         {members.map((member, index) => (
-          <div key={index} className="bg-[#3F3969] rounded-2xl p-1 w-64">
+          <div key={index} className="bg-[#3F3969] rounded-2xl p-1 w-80">
             
             {/* Фото */}
-            <div className="bg-[#2A2550] rounded-xl h-48 flex items-center justify-center mb-4 overflow-hidden">
+            <div className="bg-[#2A2550] rounded-xl h-80 flex items-center justify-center mb-4 overflow-hidden">
               {member.image ? (
                 <img src={member.image} alt={member.name} className="w-full h-full object-cover rounded-xl"/>
               ) : (

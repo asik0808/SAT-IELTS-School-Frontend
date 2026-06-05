@@ -42,10 +42,9 @@ function Home() {
                         <img src="/assets/IELTS-Score-7-0.png" alt="Student" className="hover:scale-105 transition transform duration-300 rounded-lg"/>
                         
                     </div>
-                    <div className="">
-                        <img src="/assets/ToreIELTS.jpg" alt="IELTS Result 6.5" className="hover:scale-105 transition transform duration-300 mb-3 rounded-lg"/>
-                        <img src="/assets/IELTS-Score-6-5.png" alt="Student" className=" hover:scale-105 transition transform duration-300 rounded-lg"/>
-                        
+                    <div className="flex flex-col items-center">
+                        <img src="/assets/SAT.jpeg" alt="SAT Result 1450" className="hover:scale-105 transition transform duration-300 mb-3 rounded-lg"/>
+                        <img src="/assets/SAT-Small.png" alt="Student" className="h-25 hover:scale-105 transition transform duration-300 rounded-lg"/>
                     </div>
                 </div>
 
@@ -60,33 +59,32 @@ function Home() {
                 </h2>
                 <div className="max-w-7xl mx-auto px-6 grid grid-cols-1 md:grid-cols-3 gap-16 pb-20">
                     <OverlappingCard
-                        title="ИНДИВИДУАЛЬНЫЙ ТРЕК."
+                        title="NIS-inspired методика"
                         bulletText={[
-                            "Личный наставник",
-                            "Разбор твоих слабых мест",
-                            "Подбор программы под твой уровень"
+                            "Все преподаватели — выпускники НИШ",
+                            "Программа занятий основана на подходе НИШ",
+                            "Материалы, которые используют в НИШ"
                         ]}
-                        icon="/assets/book-apple.png"
+                        icon="/assets/nis-logo.png"
                     />
 
                     <OverlappingCard
-                        title="МАКСИМУМ ПРАКТИКИ"
+                        title="Сильные наставники"
                         bulletText={[
-                            "Справочники и чек-листы",
-                            "Разбор заданий из свежих экзаменов",
-                            'Никакой лишней "воды"'
-                        ]}
-                        icon="/assets/letter.png"
-                    />
-
-                    <OverlappingCard
-                        title="ПОДДЕРЖКА 24/7"
-                        bulletText={[
-                            "Моральная поддержка до экзамена",
-                            "Разбор Эссе и задач (SAT,IELTS)",
-                            "Быстрый ответ в рабочем чате"
+                            "Assylali — SAT 1450+ (Math 750, Verbal 700)",
+                            "Семен — IELTS 8.5 (L:9.0 R:9.0 W:7.0 S:8.0)"
                         ]}
                         icon="/assets/hat.png"
+                    />
+
+                    <OverlappingCard
+                        title="Полное сопровождение"
+                        bulletText={[
+                            "Д/З и проверка эссе",
+                            "Связь с ментором 24/7",
+                            "Доступ ко всем эксклюзивным материалам"
+                        ]}
+                        icon="/assets/letter.png"
                     />
                 </div>
             </section>
