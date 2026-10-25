@@ -48,19 +48,16 @@ function Footer(){
             <div className="text-left">
                 <h1 className="text-3xl font-montserrat mb-10">Связаться с нами</h1>
                 <p className="text-gray-600 text-xl">Электронная почта:</p>
-                <p className="text-xl mb-5">marlenulydaut@gmail.com</p>
+                <p className="text-xl mb-5">majtanasylali@gmail.com</p>
                 <p className="text-gray-600 text-xl">Телефон:</p>
-                <p className="text-xl mb-5">+7 707 111 35 41</p>
+                <p className="text-xl mb-5">+7 708 669 36 13</p>
                 <div className="flex gap-6 mt-4">
-                <a href="https://www.instagram.com/edutication/" target="_blank" rel="noopener noreferrer">
-                    <img src="/assets/insta-button.png" alt="instagram" />
-                </a>
                 
-                <a href="https://wa.me/77071113541" target="_blank" rel="noopener noreferrer">
+                <a href="https://wa.me/77086693613" target="_blank" rel="noopener noreferrer">
                     <img src="/assets/whats-button.png" alt="whatsapp" />
                 </a>
                 
-                <a href="https://web.telegram.org/k/#@edutication" target="_blank" rel="noopener noreferrer">
+                <a href="https://web.telegram.org/k/#@asylali" target="_blank" rel="noopener noreferrer">
                     <img src="/assets/tg-button.png" alt="telegram" />
                 </a>
                 </div>

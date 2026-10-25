@@ -11,7 +11,7 @@ function Navbar() {
             {/* Десктоп меню */}
             <div className="hidden md:flex gap-6">
                 <Link to="/" className="transition delay-75 text-white hover:text-blue-400 text-2xl">Главная</Link>
-                <Link to="/Team" className="transition delay-75 text-white hover:text-blue-400 text-2xl">О нас</Link>
+
             </div>
 
             {/* Бургер кнопка */}
