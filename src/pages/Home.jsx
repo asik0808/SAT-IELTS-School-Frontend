@@ -71,7 +71,7 @@ function Home() {
                     <OverlappingCard
                         title="Сильные наставники"
                         bulletText={[
-                            "Assylali — SAT 1450+ (Math 750, Verbal 700)",
+                            "Assylali — SAT 1500 (Math 790, Verbal 710)",
                             "Семен — IELTS 8.5 (L:9.0 R:9.0 W:7.0 S:8.0)"
                         ]}
                         icon="/assets/hat.png"
